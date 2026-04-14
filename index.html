@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yound - Premium Desktop Music Player</title>
+  <meta name="description" content="Yound is a minimalist and premium music player for Windows. Enjoy offline listening, advanced equalizer, and an immersive audio experience.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="../build/icon.png" alt="Yound Logo" class="brand-icon">
+        <span class="brand-text">Yound</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#download" class="nav-download-btn">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container text-center">
+      <div class="hero-badge">Yound for Windows</div>
+      <h1 class="hero-title">Your ultimate<br>music companion.</h1>
+      <p class="hero-subtitle">A fast, lightweight, and sleek desktop music player. Enjoy uninterrupted local playback and a premium ad-free experience, right out of the box.</p>
+      
+      <div class="hero-actions">
+        <button id="main-download-btn" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download for Windows
+        </button>
+      </div>
+    </div>
+    <div class="hero-bottom-border"></div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>Designed for standard listening.</h2>
+        <p>No distractions. Just pure focus on what matters the most: your music.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>Minimal Interface</h3>
+            <p>Clean, distraction-free design that runs smoothly on any system without hogging resources.</p>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>Offline Mode</h3>
+            <p>Save your favorite tracks locally and access your entire library without needing an internet connection.</p>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>Studio Audio</h3>
+            <p>Fine-tune frequencies using the built-in 5-band equalizer and utilize gapless crossfades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Section -->
+  <section id="download" class="cta-section">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2>Ready to try Yound?</h2>
+        <p>Join the beta and elevate your music experience today.</p>
+      </div>
+      <div class="cta-actions">
+        <div class="os-info">Windows 10 / 11 (64-bit)</div>
+        <button id="footer-download-btn" class="btn btn-primary btn-lg">
+          Download Installer
+        </button>
+        <div class="version-info">Version 1.1.0 • ~45 MB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <img src="../build/icon.png" alt="Yound Logo" class="brand-icon-small">
+        <span class="brand-text">Yound</span>
+      </div>
+      <p class="copyright">&copy; 2026 Yound Music. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
